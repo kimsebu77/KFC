@@ -53,7 +53,10 @@ public class menu {
             int org = scan.nextInt();
 
             switch (org) {
-//                case 1 -> UFCMenuController.start();
+                case 1 -> {
+                    UFCMenuController ufcMenuController = new UFCMenuController();
+                    ufcMenuController.start();
+                }
                 case 2 -> ONEMenuController.start();
                 case 0 -> {
                     return;

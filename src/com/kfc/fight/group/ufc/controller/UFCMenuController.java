@@ -7,10 +7,10 @@ import com.kfc.fight.group.ufc.service.RankingService;
 import java.util.Scanner;
 
 public class UFCMenuController {
-    private Scanner scan = new Scanner(System.in);
-    private RankingService rankingService = new RankingService();
-    private EventService eventService = new EventService();
-    private FighterService fighterService = new FighterService();
+    static Scanner scan = new Scanner(System.in);
+    RankingService rankingService = new RankingService();
+    EventService eventService = new EventService();
+    static FighterService fighterService = new FighterService();
 
     public void start() {
         while (true) {
@@ -31,8 +31,9 @@ public class UFCMenuController {
 //                    eventService.showMenu();
                 }
                 case 3 -> {
+                    scan.nextLine();
                     System.out.print("선수 이름 입력: ");
-                    String name = scan.next();
+                    String name = scan.nextLine();
                     fighterService.search(name);
                 }
                 case 0 -> {
