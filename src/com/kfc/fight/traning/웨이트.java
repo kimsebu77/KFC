@@ -3,7 +3,10 @@ package com.kfc.fight.traning;
 import com.kfc.fight.busang.ankle;
 
 public class 웨이트 {
-    void print(){
+    static void print(){
+        System.out.println();
+        System.out.println("==============================");
+        System.out.println();
         System.out.println("[웨이트 트레이닝 가이드]");
         System.out.println("목적: 근육량 증가 및 관절 안정성 강화");
         System.out.println();
@@ -18,6 +21,8 @@ public class 웨이트 {
         System.out.println("- 반동을 이용한 동작 금지");
         System.out.println("- 정확한 자세 유지");
         System.out.println();
+        System.out.println("------------------------------");
+        System.out.println();
         if(ankle.중증==true){
             System.out.println("현재 부상 상태는 중증입니다.");
             System.out.println("모든 훈련을 중단하고 회복에 집중하세요.");
@@ -29,5 +34,7 @@ public class 웨이트 {
             System.out.println("현재 부상 상태는 경미합니다.");
             System.out.println("훈련은 가능하나 강도 조절이 필요합니다.");
         }
+        System.out.println();
+        System.out.println("==============================");
     }
 }
