@@ -1,5 +1,7 @@
 package com.kfc.fight.group.Rule;
 
+import com.kfc.fight.group.Rule.ONEcontroller.oneController;
+
 import java.util.Scanner;
 
 public class controller {
@@ -21,7 +23,8 @@ public class controller {
                     UFCRule.rule();
                 }
                 case 2 -> {
-//                    ONERule.rule();
+                    oneController controller = new oneController();
+                    controller.start();
                 }
                 case 0 -> {
                     return;
