@@ -1,6 +1,6 @@
-create database kfc;
+create database ufcEvent;
 
-use ufcfighter;
+use ufcEvent;
 
 create table numEvent
 (
@@ -41,6 +41,6 @@ insert into eventFighter values ();
 insert into eventFighter values ();
 insert into eventFighter values ();
 
-
+use ufcfighter;
 drop table numEvent;
-drop database kfc;
+drop table eventFighter;
