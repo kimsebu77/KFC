@@ -13,8 +13,8 @@ public class UFCRule {
         System.out.println("\t• 심판 판정 (라운드별 점수제)");
         System.out.println();
         System.out.println(" - 주요 규칙");
-        System.out.println("\t• 그라운드 상태의 상대에게 무릅/킥 금지");
-        System.out.println("\t• 눈 찌르기, 급소 공격, 뒤통수 가격 금지");
+        System.out.println("\t• 그라운드 상태의 상대에게 무릎/킥 금지");
+        System.out.println("\t• 아이포크(눈찌르기) 금지, 로블로(급소공격) 금지, 후두부 가격 금지, 박치기 금지");
         System.out.println();
     }
 }

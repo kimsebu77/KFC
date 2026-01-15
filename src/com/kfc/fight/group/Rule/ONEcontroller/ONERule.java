@@ -2,6 +2,9 @@ package com.kfc.fight.group.Rule.ONEcontroller;
 
 public class ONERule {
     public void kickboxingrule() {
+        System.out.println();
+        System.out.println("==============================");
+        System.out.println();
         System.out.println("ONE 챔피언십 킥복싱 룰");
         System.out.println("--------------------------------");
         System.out.println("허용 기술");
@@ -14,11 +17,17 @@ public class ONERule {
         System.out.println("- 클린치 지속 공격");
         System.out.println("- 테이크다운");
 
-        System.out.println("================================");
+        System.out.println("세부 규칙");
         System.out.println("글러브 : 8~10oz");
         System.out.println("라운드 : 3R (월드 챔피언전 5R)");
+        System.out.println();
+        System.out.println("==============================");
+        System.out.println();
     }
     public void muaythairule(){
+        System.out.println();
+        System.out.println("===============================");
+        System.out.println();
         System.out.println("ONE 챔피언십 무에타이 룰");
         System.out.println("--------------------------------");
         System.out.println("허용 기술");
@@ -31,9 +40,12 @@ public class ONERule {
         System.out.println("금지 기술");
         System.out.println("- 레슬링식 테이크다운");
         System.out.println("- 장시간 끌고 넘어뜨리기");
-
-        System.out.println("================================");
+        System.out.println();
+        System.out.println("세부 규칙");
         System.out.println("글러브 : MMA 4oz");
         System.out.println("라운드 : 3R (월드 챔피언전 5R)");
+        System.out.println();
+        System.out.println("==============================");
+        System.out.println();
     }
 }

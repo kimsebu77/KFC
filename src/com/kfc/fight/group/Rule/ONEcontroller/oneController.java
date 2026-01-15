@@ -8,7 +8,7 @@ public class oneController {
 
     public void start() {
         while (true) {
-            System.out.println("===== ONE Championship 경기 종류 =====");
+            System.out.println("===== ONE Championship (주요)경기 종류 =====");
             System.out.println("1. 킥복싱 룰");
             System.out.println("2. 무에타이 룰");
             System.out.println("0. 뒤로가기");

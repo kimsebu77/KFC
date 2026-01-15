@@ -24,9 +24,9 @@ public class hand {
             System.out.println("[심각도] 🔴 중증");
             System.out.println("즉시 훈련을 중단하고 병원 방문을 권장합니다.");
             ankle.중증=true;
-        } else if (pain || swelling) {
+        } else if (pain || swelling||cantMakeFist) {
             System.out.println("[판단 결과] 🟡 주의");
-            System.out.println("통증 또는 붓기가 확인되었습니다.");
+            System.out.println("상태 이상이 확인되었습니다.");
             System.out.println("현재 상태에서 훈련을 계속하면 부상이 악화될 수 있습니다.");
             System.out.println("오늘은 훈련을 중단하고 냉찜질과 휴식을 권장합니다.");
             System.out.println("증상이 2~3일 이상 지속되면 병원 방문을 고려하세요.");

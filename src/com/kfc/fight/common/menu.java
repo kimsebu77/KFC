@@ -1,5 +1,6 @@
 package com.kfc.fight.common;
 
+import com.kfc.fight.busang.busangma;
 import com.kfc.fight.group.Rule.controller;
 import com.kfc.fight.group.one.controller.ONEMenuController;
 import com.kfc.fight.group.ufc.controller.UFCMenuController;
@@ -28,7 +29,7 @@ public class menu {
                 }
 
                 case 2 -> {
-
+                    busangma.print();
                 }
                 case 3 -> {
                     selectGroup(scan);

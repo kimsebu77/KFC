@@ -10,7 +10,7 @@ public class ankle {
 
     static boolean pain;
     static boolean swelling;
-    static boolean canWalk = true;
+    static boolean cantWalk;
 
     public static void ankleprint() {
         System.out.println("발목에 통증이 있는가? (Y/N)");
@@ -25,10 +25,10 @@ public class ankle {
 
         System.out.println("걷기 어려운가? (Y/N)");
         if (sc.next().equalsIgnoreCase("Y")) {
-            canWalk = false;
+            cantWalk = true;
         }
 
-        if (!canWalk) {
+        if (cantWalk) {
             System.out.println("[심각도] 🔴 중증");
             System.out.println("보행이 어려운 상태입니다.");
             System.out.println("즉시 훈련을 중단하고 병원 방문을 권장합니다.");

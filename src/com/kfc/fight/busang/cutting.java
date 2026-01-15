@@ -24,9 +24,9 @@ public class cutting {
             System.out.println("출혈이 심하거나 상처가 깊습니다.");
             System.out.println("즉시 지혈 후 병원 방문이 필요합니다.");
             ankle.중증=true;
-        } else if (bleeding) {
+        } else if (bleeding||deepCut) {
             System.out.println("[판단 결과] 🟡 주의");
-            System.out.println("출혈이 확인되었습니다.");
+            System.out.println("출혈 또는 깊은 상처가 확인되었습니다.");
             System.out.println("압박 지혈 후 소독을 진행하세요.");
             ankle.주의=true;
         } else {
