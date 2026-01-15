@@ -1,5 +1,6 @@
 import java.sql.Connection;
 import java.sql.DriverManager;
+import java.sql.SQLException;
 import java.sql.Statement;
 
 public class fighter {
@@ -13,8 +14,8 @@ public class fighter {
             String name="이스라엘 아데산야";
             String plus="insert into ufcfighter values('"+name+"'"+")";
             stmt.executeUpdate(plus);
-        }catch(Exception e){
-
+        }catch(ClassNotFoundException | SQLException e){
+            e.printStackTrace();
         }
 
     }
