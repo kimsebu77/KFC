@@ -29,7 +29,7 @@ public class UFCMenuController {
 //                    rankingService.showMenu();
                 }
                 case 2 -> {
-//                    eventService.showMenu();
+                    eventService.showAllEvents();
                 }
                 case 3 -> {
                     System.out.print("선수 이름 입력: ");
