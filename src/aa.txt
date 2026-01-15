@@ -1,5 +1,6 @@
 
 use ufcfighter;
+DROP TABLE IF EXISTS heavy;
 CREATE TABLE fly (
     id INT AUTO_INCREMENT PRIMARY KEY,
     name VARCHAR(20),
@@ -8,11 +9,12 @@ CREATE TABLE fly (
     weight INT,
     WIN INT,
     LOSE INT,
-    accuracy DOUBLE,
+    attackaccuracy double,
+    takedownaccuracy DOUBLE,
     KO_TKO INT,
     fighter_RANK VARCHAR(4)
 );
-CREATE TABLE bantam (
+CREATE TABLE Bantam (
     id INT AUTO_INCREMENT PRIMARY KEY,
     name VARCHAR(20),
     rich INT,
@@ -20,11 +22,12 @@ CREATE TABLE bantam (
     weight INT,
     WIN INT,
     LOSE INT,
-    accuracy DOUBLE,
+    attackaccuracy double,
+    takedownaccuracy DOUBLE,
     KO_TKO INT,
     fighter_RANK VARCHAR(4)
 );
-CREATE TABLE feather (
+CREATE TABLE Feather (
     id INT AUTO_INCREMENT PRIMARY KEY,
     name VARCHAR(20),
     rich INT,
@@ -32,11 +35,11 @@ CREATE TABLE feather (
     weight INT,
     WIN INT,
     LOSE INT,
-    accuracy DOUBLE,
+    attackaccuracy double,
+    takedownaccuracy DOUBLE,
     KO_TKO INT,
     fighter_RANK VARCHAR(4)
-);
-CREATE TABLE light (
+);CREATE TABLE Light (
     id INT AUTO_INCREMENT PRIMARY KEY,
     name VARCHAR(20),
     rich INT,
@@ -44,11 +47,11 @@ CREATE TABLE light (
     weight INT,
     WIN INT,
     LOSE INT,
-    accuracy DOUBLE,
+    attackaccuracy double,
+    takedownaccuracy DOUBLE,
     KO_TKO INT,
     fighter_RANK VARCHAR(4)
-);
-CREATE TABLE welter (
+);CREATE TABLE Welter (
     id INT AUTO_INCREMENT PRIMARY KEY,
     name VARCHAR(20),
     rich INT,
@@ -56,11 +59,12 @@ CREATE TABLE welter (
     weight INT,
     WIN INT,
     LOSE INT,
-    accuracy DOUBLE,
+    attackaccuracy double,
+    takedownaccuracy DOUBLE,
     KO_TKO INT,
     fighter_RANK VARCHAR(4)
 );
-CREATE TABLE middle (
+CREATE TABLE Middle (
     id INT AUTO_INCREMENT PRIMARY KEY,
     name VARCHAR(20),
     rich INT,
@@ -68,11 +72,12 @@ CREATE TABLE middle (
     weight INT,
     WIN INT,
     LOSE INT,
-    accuracy DOUBLE,
+    attackaccuracy double,
+    takedownaccuracy DOUBLE,
     KO_TKO INT,
     fighter_RANK VARCHAR(4)
 );
-CREATE TABLE lightheavy (
+CREATE TABLE LightHeavy (
     id INT AUTO_INCREMENT PRIMARY KEY,
     name VARCHAR(20),
     rich INT,
@@ -80,11 +85,12 @@ CREATE TABLE lightheavy (
     weight INT,
     WIN INT,
     LOSE INT,
-    accuracy DOUBLE,
+    attackaccuracy double,
+    takedownaccuracy DOUBLE,
     KO_TKO INT,
     fighter_RANK VARCHAR(4)
 );
-CREATE TABLE heavy (
+CREATE TABLE Heavy (
     id INT AUTO_INCREMENT PRIMARY KEY,
     name VARCHAR(20),
     rich INT,
@@ -92,7 +98,8 @@ CREATE TABLE heavy (
     weight INT,
     WIN INT,
     LOSE INT,
-    accuracy DOUBLE,
+    attackaccuracy double,
+    takedownaccuracy DOUBLE,
     KO_TKO INT,
     fighter_RANK VARCHAR(4)
 );
