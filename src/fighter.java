@@ -11,7 +11,7 @@ public class fighter {
             System.out.println("DB연결 OK");
             Statement stmt=conn.createStatement();;
             String name="이스라엘 아데산야";
-            String plus="insert into fighter values('"+name+"'"+")";
+            String plus="insert into ufcfighter values('"+name+"'"+")";
             stmt.executeUpdate(plus);
         }catch(Exception e){
 

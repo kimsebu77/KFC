@@ -1,0 +1,24 @@
+USE kfc;
+CREATE TABLE onefighter (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(20),
+    height INT,
+    weight INT,
+    WIN INT,
+    LOSE INT,
+    KO_TKO INT,
+    Country VARCHAR(10)
+);
+CREATE TABLE ufcfighter (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(20),
+    rich INT,
+    height INT,
+    weight INT,
+    WIN INT,
+    LOSE INT,
+    accuracy DOUBLE,
+    KO_TKO INT,
+    fighter_RANK VARCHAR(4)
+);
+
