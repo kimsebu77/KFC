@@ -8,7 +8,7 @@ public class DBUtil {
         return DriverManager.getConnection(
                 "jdbc:mysql://localhost:3306/ufcevent",
                 "root",
-                "07080427kr"
+                "6322327Je!"
         );
     }
 
@@ -16,7 +16,7 @@ public class DBUtil {
         return DriverManager.getConnection(
                 "jdbc:mysql://localhost:3306/ufcfighter",
                 "root",
-                "07080427kr"
+                "6322327Je!"
         );
     }
 }
