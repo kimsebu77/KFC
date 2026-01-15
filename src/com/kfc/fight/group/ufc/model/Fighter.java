@@ -11,9 +11,9 @@ public class Fighter {
     private double attackAccuracy;
     private double takedownAccuracy;
     private int ko_tko;
-    private int fighter_rank;
+    private String fighter_rank;
 
-    public Fighter(int id, String name, int rich, int height, int weight, int win, int lose, double attackAccuracy, double takedownAccuracy, int ko_tko, int fighter_rank) {
+    public Fighter(int id, String name, int rich, int height, int weight, int win, int lose, double attackAccuracy, double takedownAccuracy, int ko_tko, String fighter_rank) {
         this.id = id;
         this.name = name;
         this.rich = rich;
@@ -67,7 +67,7 @@ public class Fighter {
         return ko_tko;
     }
 
-    public int getFighter_rank() {
+    public String getFighter_rank() {
         return fighter_rank;
     }
 }

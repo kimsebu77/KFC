@@ -22,6 +22,7 @@ public class UFCMenuController {
             System.out.print("선택: ");
 
             int choice = scan.nextInt();
+            scan.nextLine();
 
             switch (choice) {
                 case 1 -> {
@@ -32,7 +33,7 @@ public class UFCMenuController {
                 }
                 case 3 -> {
                     System.out.print("선수 이름 입력: ");
-                    String name = scan.next();
+                    String name = scan.nextLine();
                     fighterService.search(name);
                 }
                 case 0 -> {

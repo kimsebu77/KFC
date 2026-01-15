@@ -9,7 +9,7 @@ import java.sql.ResultSet;
 
 public class FighterDAO {
     public Fighter findByName(String name) {
-        String sql = "SELECT * FROM fighter WHERE name = ?";
+        String sql = "SELECT * FROM fly WHERE name like ?";
 
         try {
             Connection conn = DBUtil.getFighterConnection();
@@ -30,7 +30,7 @@ public class FighterDAO {
                         rs.getDouble("attackaccuracy"),
                         rs.getDouble("takedownaccuracy"),
                         rs.getInt("ko_tko"),
-                        rs.getInt("fighter_rank")
+                        rs.getString("fighter_rank")
                 );
             }
 
