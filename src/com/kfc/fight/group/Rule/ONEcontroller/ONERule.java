@@ -1,7 +1,7 @@
-package com.kfc.fight.group.Rule;
+package com.kfc.fight.group.Rule.ONEcontroller;
 
 public class ONERule {
-    public static void kickboxingrule() {
+    public void kickboxingrule() {
         System.out.println("ONE 챔피언십 킥복싱 룰");
         System.out.println("--------------------------------");
         System.out.println("허용 기술");
@@ -18,7 +18,7 @@ public class ONERule {
         System.out.println("글러브 : 8~10oz");
         System.out.println("라운드 : 3R (월드 챔피언전 5R)");
     }
-    public static void muaythairule(){
+    public void muaythairule(){
         System.out.println("ONE 챔피언십 무에타이 룰");
         System.out.println("--------------------------------");
         System.out.println("허용 기술");
