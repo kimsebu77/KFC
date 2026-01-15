@@ -1,4 +1,4 @@
-package mma;
+package ufc;
 
 public class Event {
 
