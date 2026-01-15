@@ -6,13 +6,13 @@ public class ankle {
     public static boolean 중증=false;
     public static boolean 주의=false;
     public static boolean 경미=false;
-    Scanner sc = new Scanner(System.in);
+    static Scanner sc = new Scanner(System.in);
 
-    boolean pain;
-    boolean swelling;
-    boolean canWalk = true;
+    static boolean pain;
+    static boolean swelling;
+    static boolean canWalk = true;
 
-    public void print() {
+    public static void ankleprint() {
         System.out.println("발목에 통증이 있는가? (Y/N)");
         if (sc.next().equalsIgnoreCase("Y")) {
             pain = true;

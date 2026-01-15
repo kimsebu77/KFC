@@ -32,7 +32,6 @@ public class UFCMenuController {
                     eventService.showEventFightCard();
                 }
                 case 3 -> {
-                    scan.nextLine();
                     System.out.print("선수 이름 입력: ");
                     String name = scan.nextLine();
                     fighterService.search(name);

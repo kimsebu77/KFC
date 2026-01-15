@@ -3,11 +3,11 @@ package com.kfc.fight.busang;
 import java.util.Scanner;
 
 public class hand {
-    Scanner sc = new Scanner(System.in);
-    boolean pain;
-    boolean swelling;
-    boolean cantMakeFist;
-    void print(){
+    static Scanner sc = new Scanner(System.in);
+    static boolean pain;
+    static boolean swelling;
+    static boolean cantMakeFist;
+    public static void handprint(){
         System.out.println("통증이 있는가? Y/N");
         if(sc.next().equals("Y")){
             pain = true;

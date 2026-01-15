@@ -1,0 +1,25 @@
+package com.kfc.fight.busang;
+
+import java.util.Scanner;
+
+public class busangma {
+    static Scanner sc = new Scanner(System.in);
+    public static void print(){
+        System.out.println("부상 부위를 찍으세요.");
+        System.out.println("1. 손/손목\n" +
+                "2. 어깨\n" +
+                "3. 무릎\n" +
+                "4. 발/발목\n" +
+                "5. 갈비뼈\n" +
+                "6. 얼굴(상처)");
+        int select=0;
+        switch(select){
+            case 1->hand.handprint();
+            case 2->shoulder.sooulderprint();
+            case 3->knee.kneeprint();
+            case 4->ankle.ankleprint();
+            case 5->rib.ribprint();
+            case 6->cutting.cuttingprint();
+        }
+    }
+}

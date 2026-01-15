@@ -3,12 +3,12 @@ package com.kfc.fight.busang;
 import java.util.Scanner;
 
 public class cutting {
-    Scanner sc = new Scanner(System.in);
+    static Scanner sc = new Scanner(System.in);
 
-    boolean bleeding;
-    boolean deepCut;
+    static boolean bleeding;
+    static boolean deepCut;
 
-    public void print() {
+    public static void cuttingprint() {
         System.out.println("출혈이 있는가? (Y/N)");
         if (sc.next().equalsIgnoreCase("Y")) {
             bleeding = true;

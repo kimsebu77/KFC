@@ -3,12 +3,12 @@ package com.kfc.fight.busang;
 import java.util.Scanner;
 
 public class rib {
-    Scanner sc = new Scanner(System.in);
+    static Scanner sc = new Scanner(System.in);
 
-    boolean pain;
-    boolean painWhenBreathing;
+    static boolean pain;
+    static boolean painWhenBreathing;
 
-    public void print() {
+    public static void ribprint() {
         System.out.println("갈비뼈에 통증이 있는가? (Y/N)");
         if (sc.next().equalsIgnoreCase("Y")) {
             pain = true;

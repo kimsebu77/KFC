@@ -3,12 +3,12 @@ package com.kfc.fight.busang;
 import java.util.Scanner;
 
 public class knee {
-    Scanner sc = new Scanner(System.in);
+    static Scanner sc = new Scanner(System.in);
 
-    boolean pain;
-    boolean canWalk = true;
+    static boolean pain;
+    static boolean canWalk = true;
 
-    public void print() {
+    public static void kneeprint() {
         System.out.println("무릎에 통증이 있는가? (Y/N)");
         if (sc.next().equalsIgnoreCase("Y")) {
             pain = true;
