@@ -22,13 +22,14 @@ public class UFCMenuController {
             System.out.print("선택: ");
 
             int choice = scan.nextInt();
+            scan.nextLine();
 
             switch (choice) {
                 case 1 -> {
 //                    rankingService.showMenu();
                 }
                 case 2 -> {
-//                    eventService.showMenu();
+                    eventService.showEventFightCard();
                 }
                 case 3 -> {
                     scan.nextLine();

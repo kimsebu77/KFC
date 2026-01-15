@@ -47,6 +47,7 @@ public class menu {
             System.out.println("===== 단체 선택 =====");
             System.out.println("1. UFC");
             System.out.println("2. ONE");
+            System.out.println("3. 경기 룰");
             System.out.println("0. 뒤로가기");
             System.out.print("선택: ");
 
@@ -58,6 +59,9 @@ public class menu {
                     ufcMenuController.start();
                 }
                 case 2 -> ONEMenuController.start();
+                case 3 -> {
+
+                }
                 case 0 -> {
                     return;
                 }
