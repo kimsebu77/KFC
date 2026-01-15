@@ -4,6 +4,7 @@ import com.kfc.fight.busang.busangma;
 import com.kfc.fight.group.Rule.controller;
 import com.kfc.fight.group.one.controller.ONEMenuController;
 import com.kfc.fight.group.ufc.controller.UFCMenuController;
+import com.kfc.fight.traning.tranings;
 
 import java.util.Scanner;
 
@@ -25,7 +26,7 @@ public class menu {
 
             switch (choice) {
                 case 1 -> {
-
+                    tranings.print();
                 }
 
                 case 2 -> {
