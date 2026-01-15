@@ -1,6 +1,6 @@
 create database kfc;
 
-use ufcfighter;
+use ufcevent;
 
 create table numEvent
 (
