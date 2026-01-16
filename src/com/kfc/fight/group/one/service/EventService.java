@@ -40,17 +40,18 @@ public class EventService {
     }
 
     private void showFightCard(int eventId) {
-        Map<String, Map<Integer, List<String>>> cards = eventFightDAO.getFightCard(eventId);
+        // 순서가 보장된 Map을 받아옵니다.
+        Map<Integer, Map<String, List<String>>> fights = eventFightDAO.getFightCard(eventId);
 
-        for (String cardType : cards.keySet()) {
-            System.out.println("\n===== " + cardType + " =====");
-            Map<Integer, List<String>> fights = cards.get(cardType);
+        System.out.println("\n===== 파이트 카드 =====");
 
-            // fightNo는 1, 2, 3... 순서대로 나옵니다.
-            for (Integer fightNo : fights.keySet()) {
-                List<String> fighters = fights.get(fightNo);
+        for (Integer fightNo : fights.keySet()) {
+            Map<String, List<String>> detail = fights.get(fightNo);
 
-                System.out.print("Match " + fightNo + ": ");
+            for (String fightType : detail.keySet()) {
+                List<String> fighters = detail.get(fightType);
+
+                System.out.print("Match " + fightNo + " [" + fightType + "]: ");
                 if (fighters.size() >= 2) {
                     System.out.println(fighters.get(0) + " VS " + fighters.get(1));
                 } else {
