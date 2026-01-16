@@ -31,7 +31,7 @@ public class knee {
         } else {
             System.out.println("[판단 결과] 🟢 경미");
             System.out.println("가벼운 휴식으로 충분합니다.");
-            busangma.경미 =true;
+            busangma.경미=true;
         }
     }
 }

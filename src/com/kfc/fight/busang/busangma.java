@@ -34,4 +34,25 @@ public class busangma {
             }
         }
     }
+    public static void allprint (){
+        System.out.println();
+        System.out.println("------------------------------");
+        System.out.println();
+        if(busangma.중증==true){
+            System.out.println("현재 부상 상태는 중증입니다.");
+            System.out.println("모든 훈련을 중단하고 회복에 집중하세요.");
+        }
+        else if(busangma.주의==true){
+            System.out.println("현재 부상 상태는 주의 단계입니다.");
+            System.out.println("훈련은 제한적으로만 진행해야 합니다.");
+        } else if (busangma.경미==true) {
+            System.out.println("현재 부상 상태는 경미합니다.");
+            System.out.println("훈련은 가능하나 강도 조절이 필요합니다.");
+        }
+        else{
+            System.out.println("현재 상태를 확인할 수 없습니다 컨디션에 맞게 훈련하세요");
+        }
+        System.out.println();
+        System.out.println("==============================");;
+    }
 }
