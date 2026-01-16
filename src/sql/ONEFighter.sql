@@ -33,6 +33,3 @@ values ("나다카","atom",165,52,4,0,2,"11분 43초","C","무에타이")
 
 insert into fighter (name, weight_class, height, weight, win, lose, finishes, AVG_Duration, fighter_RANK,striking)
 values ("타완차이","feather",180,69,10,3,6,"9분 48초","C","무에타이");
-
-insert into fighter (name, weight_class, height, weight, win, lose, finishes, AVG_Duration, fighter_RANK,striking)
-values ("조경재","bantam",173,65,0,0,0,"0분 0초","U","킥복싱");
