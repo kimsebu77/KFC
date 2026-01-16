@@ -26,6 +26,9 @@ public class busangma {
             case 4->ankle.ankleprint();
             case 5->rib.ribprint();
             case 6->cutting.cuttingprint();
+            default -> {
+                System.out.println("잘못된 입력입니다. 다시 입력해주세요");
+            }
         }
     }
 }
