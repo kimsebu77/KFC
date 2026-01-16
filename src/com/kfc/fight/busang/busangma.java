@@ -3,6 +3,9 @@ package com.kfc.fight.busang;
 import java.util.Scanner;
 
 public class busangma {
+    public static boolean 중증=false;
+    public static boolean 주의=false;
+    public static boolean 경미=false;
     static Scanner sc = new Scanner(System.in);
     public static void print(){
         System.out.println();

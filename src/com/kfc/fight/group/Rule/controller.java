@@ -23,7 +23,6 @@ public class controller {
                     UFCRule.rule();
                 }
                 case 2 -> {
-                    oneController controller = new oneController();
                     controller.start();
                 }
                 case 0 -> {

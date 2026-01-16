@@ -18,8 +18,8 @@ public class EventFighterDAO {
         // fight_no를 명시적으로 가져옴
         String sql = """
                 SELECT ef.card_type, ef.fight_no, f.name
-                FROM ufcEvent.eventFighter ef
-                JOIN ufcfighter.fighter f ON ef.fighterId = f.id
+                FROM oneEvent.eventFighter ef
+                JOIN onefighter.fighter f ON ef.fighterId = f.id
                 WHERE ef.eventId = ?
                 ORDER BY ef.card_type, ef.fight_no
             """;

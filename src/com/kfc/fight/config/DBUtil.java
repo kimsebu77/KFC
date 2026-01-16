@@ -8,7 +8,7 @@ public class DBUtil {
         return DriverManager.getConnection(
                 "jdbc:mysql://localhost:3306/ufcevent",
                 "root",
-                "6322327Je!"
+                "07080427kr"
         );
     }
 
@@ -16,23 +16,23 @@ public class DBUtil {
         return DriverManager.getConnection(
                 "jdbc:mysql://localhost:3306/ufcfighter",
                 "root",
-                "6322327Je!"
+                "07080427kr"
         );
     }
 
     public static Connection getFighterConnection2() throws Exception {
         return DriverManager.getConnection(
-                "jdbc:mysql://localhost:3306/oneevent",
+                "jdbc:mysql://localhost:3306/onefighter",
                 "root",
-                "6322327Je!"
+                "07080427kr"
         );
     }
 
     public static Connection getEventConnection2() throws Exception {
         return DriverManager.getConnection(
-                "jdbc:mysql://localhost:3306/onefighter",
+                "jdbc:mysql://localhost:3306/oneevent",
                 "root",
-                "6322327Je!"
+                "07080427kr"
         );
     }
 }
