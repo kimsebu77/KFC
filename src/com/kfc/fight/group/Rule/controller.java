@@ -23,7 +23,7 @@ public class controller {
                     UFCRule.rule();
                 }
                 case 2 -> {
-                    controller.start();
+                    oneController.start();
                 }
                 case 0 -> {
                     return;

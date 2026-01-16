@@ -4,15 +4,14 @@ import java.util.Scanner;
 
 public class oneController {
 
-    Scanner scan = new Scanner(System.in);
-
-    public void start() {
+    public static void start() {
+        Scanner scan = new Scanner(System.in);
         while (true) {
             System.out.println("===== ONE Championship (주요)경기 종류 =====");
             System.out.println("1. 킥복싱 룰");
             System.out.println("2. 무에타이 룰");
             System.out.println("0. 뒤로가기");
-            System.out.println("선택: ");
+            System.out.print("선택: ");
 
             int choice = scan.nextInt();
             scan.nextLine();
