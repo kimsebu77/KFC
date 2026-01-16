@@ -9,7 +9,9 @@ import com.kfc.fight.traning.tranings;
 import java.util.Scanner;
 
 public class menu {
-
+    static ONEMenuController oneMenuController;
+    static UFCMenuController ufcMenuController;
+    static controller controller;
     public static void showMainMenu() {
 
         Scanner scan = new Scanner(System.in);
@@ -57,19 +59,15 @@ public class menu {
             System.out.print("선택: ");
 
             int org = scan.nextInt();
-
             switch (org) {
                 case 1 -> {
-                    UFCMenuController ufcMenuController = new UFCMenuController();
                     ufcMenuController.start();
                 }
                 case 2 -> {
-                    ONEMenuController oneMenuController = new ONEMenuController();
                     oneMenuController.start();
                 }
                 case 3 -> {
-                        controller controller = new controller();
-                        controller.start();
+                    controller.start();
                 }
                 case 0 -> {
                     return;

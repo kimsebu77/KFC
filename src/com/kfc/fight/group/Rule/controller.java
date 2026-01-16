@@ -5,9 +5,9 @@ import com.kfc.fight.group.Rule.ONEcontroller.oneController;
 import java.util.Scanner;
 
 public class controller {
-    private Scanner scan = new Scanner(System.in);
+    private static Scanner scan = new Scanner(System.in);
 
-    public void start() {
+    public static void start() {
         while (true) {
             System.out.println("===== 단체 / 룰 정보 =====");
             System.out.println("1. UFC 룰 보기");

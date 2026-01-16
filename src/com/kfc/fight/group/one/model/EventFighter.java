@@ -3,12 +3,12 @@ package com.kfc.fight.group.one.model;
 public class EventFighter {
     private int eventId;
     private int fighterId;
-    private String cardType;
+    private String fightType;
 
-    public EventFighter(int eventId, int fighterId, String cardType) {
+    public EventFighter(int eventId, int fighterId, String fightType) {
         this.eventId = eventId;
         this.fighterId = fighterId;
-        this.cardType = cardType;
+        this.fightType = fightType;
     }
 
     public int getEventId() {
@@ -20,6 +20,6 @@ public class EventFighter {
     }
 
     public String getCardType() {
-        return cardType;
+        return fightType;
     }
 }
