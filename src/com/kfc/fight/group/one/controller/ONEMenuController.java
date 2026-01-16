@@ -14,7 +14,7 @@ public class ONEMenuController {
 
     public void start() {
         while (true) {
-            System.out.println("===== UFC 메뉴 =====");
+            System.out.println("===== ONE 메뉴 =====");
             System.out.println("1. 랭킹");
             System.out.println("2. 이벤트");
             System.out.println("3. 선수 검색");
