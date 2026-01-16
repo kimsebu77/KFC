@@ -26,7 +26,7 @@ public class UFCMenuController {
 
             switch (choice) {
                 case 1 -> {
-//                    rankingService.showMenu();
+                    rankingService.showRankingMenu();
                 }
                 case 2 -> {
                     eventService.showEventFightCard();
