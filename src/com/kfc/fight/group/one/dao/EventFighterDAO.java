@@ -13,15 +13,15 @@ import java.util.Map;
 public class EventFighterDAO {
 
     public Map<String, Map<Integer, List<String>>> getFightCard(int eventId) {
-        Map<String, Map<Integer, List<String>>> cardMap = new LinkedHashMap<>();
+        Map<String, Map<Integer, List<String>>> fightMap = new LinkedHashMap<>();
 
         // fight_no를 명시적으로 가져옴
         String sql = """
-                SELECT ef.card_type, ef.fight_no, f.name
+                SELECT ef.fight_type, ef.fight_no, f.name
                 FROM oneEvent.eventFighter ef
                 JOIN onefighter.fighter f ON ef.fighterId = f.id
                 WHERE ef.eventId = ?
-                ORDER BY ef.card_type, ef.fight_no
+                ORDER BY ef.fight_type, ef.fight_no
             """;
 
         try (
@@ -32,18 +32,18 @@ public class EventFighterDAO {
             ResultSet rs = ps.executeQuery();
 
             while (rs.next()) {
-                String cardType = rs.getString("card_type");
+                String fightType = rs.getString("fight_type");
                 int fightNo = rs.getInt("fight_no"); // DB의 경기 번호 사용
                 String name = rs.getString("name");
 
-                cardMap
-                        .computeIfAbsent(cardType, k -> new LinkedHashMap<>())
+                fightMap
+                        .computeIfAbsent(fightType, k -> new LinkedHashMap<>())
                         .computeIfAbsent(fightNo, k -> new ArrayList<>())
                         .add(name);
             }
         } catch (Exception e) {
             throw new RuntimeException(e);
         }
-        return cardMap;
+        return fightMap;
     }
 }
