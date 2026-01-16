@@ -1,8 +1,8 @@
 package com.kfc.fight.group.one.service;
 
-import com.kfc.fight.group.ufc.dao.EventDAO;
-import com.kfc.fight.group.ufc.dao.EventFighterDAO;
-import com.kfc.fight.group.ufc.model.Event;
+import com.kfc.fight.group.one.dao.EventDAO;
+import com.kfc.fight.group.one.dao.EventFighterDAO;
+import com.kfc.fight.group.one.model.Event;
 
 import java.util.*;
 
@@ -15,7 +15,7 @@ public class EventService {
     public void showAllEvents() {
         List<Event> events = eventDAO.findAll();
 
-        System.out.println("=== UFC 이벤트 목록 ===");
+        System.out.println("=== ONE 이벤트 목록 ===");
         for (Event e : events) {
             System.out.println(
                     e.getId() + ". " +

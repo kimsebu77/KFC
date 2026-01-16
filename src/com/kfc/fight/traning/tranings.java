@@ -24,6 +24,9 @@ public class tranings {
             case 2-> 스트렝스.print();
             case 3-> 웨이트.print();
             case 4-> 정신력.print();
+            default -> {
+                System.out.println("잘못된 입력입니다. 다시 입력해주세요");
+            }
         }
     }
 }

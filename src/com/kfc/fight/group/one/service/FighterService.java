@@ -17,13 +17,13 @@ public class FighterService {
         System.out.println("=== 선수 정보 ===");
         System.out.println("이름 : " + fighter.getName() +
                 "\n체급 : " + fighter.getWeightClass() + // 체급 정보 출력 추가
-                "\n리치 : " + fighter.getRich() + "CM" +
                 "\n키 : " + fighter.getHeight() + "CM" +
                 "\n몸무게 : " +  fighter.getWeight() + "KG" +
                 "\n전적 : " + fighter.getWin() + "승 " + fighter.getLose() + "패" +
-                "\n타격 성공률 : " + fighter.getAttackAccuracy() + "%" +
-                "\n테이크다운 방어율 : " + fighter.getTakedownAccuracy() + "%" +
-                "\nKO/TKO 승리 : " + fighter.getKo_tko() + "번" +
-                "\n현재 랭킹 : " + fighter.getFighter_rank());
+                "\n피니쉬 : "+fighter.getFinishes() +
+                "\n평균 경기시간 : "+fighter.getAVG_Duration()+
+                "\n현재 랭킹 : " + fighter.getFighter_rank()+
+                "\n종목 : "+fighter.getStriking()
+        );
     }
 }

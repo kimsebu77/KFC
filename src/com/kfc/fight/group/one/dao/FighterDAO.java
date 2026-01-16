@@ -1,7 +1,8 @@
 package com.kfc.fight.group.one.dao;
 
 import com.kfc.fight.config.DBUtil;
-import com.kfc.fight.group.ufc.model.Fighter;
+import com.kfc.fight.group.one.model.Fighter;
+
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -30,11 +31,9 @@ public class FighterDAO {
                         rs.getInt("win"),
                         rs.getInt("lose"),
                         rs.getInt("finishes"),
-                        rs.getString("avg_")
-                        rs.getDouble("attackaccuracy"),
-                        rs.getDouble("takedownaccuracy"),
-                        rs.getInt("KO_TKO"), // DB 생성문이 대문자였으므로 맞춰줌
-                        rs.getString("fighter_RANK") // DB 생성문이 대문자였으므로 맞춰줌
+                        rs.getString("AVG_Duration"), // DB 생성문이 대문자였으므로 맞춰줌
+                        rs.getString("fighter_RANK"), // DB 생성문이 대문자였으므로 맞춰줌
+                        rs.getString("striking")
                 );
             }
         } catch (Exception e) {
