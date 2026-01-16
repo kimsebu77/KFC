@@ -9,9 +9,9 @@ import com.kfc.fight.traning.tranings;
 import java.util.Scanner;
 
 public class menu {
-    static ONEMenuController oneMenuController;
-    static UFCMenuController ufcMenuController;
-    static controller controller;
+    static ONEMenuController oneMenuController = new ONEMenuController();
+    static UFCMenuController ufcMenuController =  new UFCMenuController();
+    static controller controller = new controller();
     public static void showMainMenu() {
 
         Scanner scan = new Scanner(System.in);

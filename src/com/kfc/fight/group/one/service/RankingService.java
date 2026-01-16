@@ -49,8 +49,8 @@ public class RankingService {
         } else {
             for (Fighter f : rankings) {
                 String rank = f.getFighter_rank().equals("C") ? "[CHAMP]" : "   #" + f.getFighter_rank();
-                System.out.printf("%s | %s | %d승 %d패\n",
-                        rank, f.getName(), f.getWin(), f.getLose());
+                System.out.printf("%s | %s | %d승 %d패 |    (%s)\n",
+                        rank, f.getName(), f.getWin(), f.getLose(), f.getStriking());
             }
         }
     }

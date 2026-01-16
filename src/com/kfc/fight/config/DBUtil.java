@@ -22,7 +22,7 @@ public class DBUtil {
 
     public static Connection getFighterConnection2() throws Exception {
         return DriverManager.getConnection(
-                "jdbc:mysql://localhost:3306/oneevent",
+                "jdbc:mysql://localhost:3306/onefighter",
                 "root",
                 "6322327Je!"
         );
@@ -30,7 +30,7 @@ public class DBUtil {
 
     public static Connection getEventConnection2() throws Exception {
         return DriverManager.getConnection(
-                "jdbc:mysql://localhost:3306/onefighter",
+                "jdbc:mysql://localhost:3306/oneevent",
                 "root",
                 "6322327Je!"
         );
