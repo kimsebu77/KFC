@@ -20,7 +20,7 @@ public class RankingDAO {
                 "ELSE 1 END, " +
                 "CAST(fighter_rank AS UNSIGNED) ASC";
 
-        try (Connection conn = DBUtil.getFighterConnection();
+        try (Connection conn = DBUtil.getFighterConnection2();
              PreparedStatement ps = conn.prepareStatement(sql)) {
             ps.setString(1, weightClass);
             ResultSet rs = ps.executeQuery();

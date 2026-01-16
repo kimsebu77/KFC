@@ -63,7 +63,10 @@ public class menu {
                     UFCMenuController ufcMenuController = new UFCMenuController();
                     ufcMenuController.start();
                 }
-                case 2 -> ONEMenuController.start();
+                case 2 -> {
+                    ONEMenuController oneMenuController = new ONEMenuController();
+                    oneMenuController.start();
+                }
                 case 3 -> {
                         controller controller = new controller();
                         controller.start();

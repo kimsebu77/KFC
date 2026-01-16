@@ -16,7 +16,7 @@ public class EventDAO {
         List<Event> list = new ArrayList<>();
 
         try {
-            Connection conn = DBUtil.getEventConnection();
+            Connection conn = DBUtil.getEventConnection2();
             PreparedStatement ps = conn.prepareStatement(sql);
             ResultSet rs = ps.executeQuery();
             while (rs.next()) {

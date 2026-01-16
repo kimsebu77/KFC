@@ -25,7 +25,7 @@ public class EventFighterDAO {
             """;
 
         try (
-                Connection conn = DBUtil.getEventConnection();
+                Connection conn = DBUtil.getEventConnection2();
                 PreparedStatement ps = conn.prepareStatement(sql)
         ) {
             ps.setInt(1, eventId);
